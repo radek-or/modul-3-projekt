@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kreon:wght@300..700&display=swap");
+
+/* Zmienne */
+$font-main: "Open Sans";
+$font-logo: "Dancing Script";
+$font-header-1: "Kreon";
+
+$font-color-main: white;
+$font-color-sections: black;
+$details-color: rgb(255, 217, 0);
+$color-description: #808080;
+
+/* Global */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.section-header {
+	color: $font-color-sections;
+	padding: 80px 0;
+}
+
+.section-header h1 {
+	font-size: 40px;
+	font-family: $font-main;
+	font-weight: 800;
+	letter-spacing: 2px;
+	padding: 0;
+	margin: 0;
+    text-align: center;
+}
+
+.section-header h2 {
+	font-size: 16px;
+    letter-spacing: 1px;
+	font-family: $font-header-1;
+	font-style: italic;
+	color: $color-description;
+	padding: 0;
+	margin: 0;
+    text-align: center;
+}
+
+/*nav and heading*/
+
+.nav-header {
+	background-image: url(/images/twilight-8171206_1920.jpg);
+	background-position: center;
+	background-size: cover;
+	width: auto;
+	height: 710px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper-nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.wrapper-nav .logo {
+	font-family: $font-logo;
+	font-size: 30px;
+	color: $details-color;
+}
+
+.wrapper-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	height: 300px;
+	margin-top: 150px;
+	padding: 0 10px;
+}
+
+.wrapper-header h1 {
+	color: $font-color-main;
+	font-family: $font-header-1;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 40px;
+	letter-spacing: 2px;
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper-header h2 {
+	color: $font-color-main;
+	font-size: 72px;
+	font-family: $font-main;
+	letter-spacing: 2px;
+	padding: 0;
+	margin: 0;
+}
+
+.btn {
+	height: 65px;
+	width: 240px;
+	background: $details-color;
+	border: 0;
+	color: $font-color-main;
+	font-family: $font-main;
+	font-size: 20px;
+	font-weight: 500;
+	border-radius: 5px;
+	padding: 0;
+	margin: 20px;
+}
+
+.menu-tabs {
+	list-style-type: none;
+}
+
+.menu-tabs li {
+	display: inline-block;
+	margin: 20px;
+	font-family: $font-main;
+	font-weight: 600;
+	color: $font-color-main;
+	font-size: 14px;
+}
+
+/* Services */
+
+.container-services {
+	max-width: 1400px;
+	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-services {
+	display: flex;
+    width: 70%;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 110px;
+}
+
+.services {
+	display: flex;
+}
+.service {
+	padding: 0 10px;
+}
+
+.service i {
+	font-size: 40px;
+	height: 70px;
+	width: 70px;
+	line-height: 60px;
+	border: 3px solid $details-color;
+	border-radius: 50%;
+	color: $details-color;
+}
+
+.service h2 {
+	font-family: $font-main;
+    font-size: 18px;
+}
+
+.service p {
+	font-family: $font-header-1;
+	font-size: 14px;
+}
+
+/* Portfolio */
+
+.portfolio-section {
+	background-color: rgb(226, 226, 226);
+}
+
+.wrapper-portfolio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.project {
+    width: 140px;
+	height: 400px;
+	flex: 1 0 calc(33.33% - 20px);
+	margin: 10px;
+}
+
+.project .img {
+	overflow: hidden;
+	height: 300px;
+
+}
+
+.project .img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.project .description {
+	background-color: white;
+	text-align: center;
+    height: 100px;
+    padding: 25px 0;
+
+}
+	.description h2 {
+		color: black;
+        font-family: $font-main;
+        font-size: 18px;
+        font-weight: 800;
+        padding: 0;
+        margin: 0;
+	}
+
+	.description h3 {
+		color: $color-description;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0;
+        margin: 0;
+	}
+
+/* Footer */
+
+.container-footer {
+	max-width: 1400px;
+	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.wrapper-footer {
+    width: 70%;
+	display: flex;
+	justify-content: start;
+    align-items: center;
+}
+
+.copy {
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+.copy h1 {
+	font-size: 14px;
+	font-family: $font-main;
+	color: $color-description;
+}
+
+.media {
+	flex-grow: 2;
+	flex-basis: 0;
+}
+
+.media ul li {
+    background: black;
+    color: $font-color-main;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 0 5px; ;
+
+}
+
+.media ul {
+	list-style-type: none;
+}
+
+.media ul li {
+	display: inline-block;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
