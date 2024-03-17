@@ -59,6 +59,36 @@ body {
 
 /*nav and heading*/
 
+.fixed-top {
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 40px;
+	position: absolute;
+}
+
+.navbar-collapse {
+	flex-grow: 0;
+}
+
+.navbar-light .navbar-brand {
+	color: $details-color;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: $font-color-main;
+	font-weight: 400;
+	font-size: 16px;
+	font-family: $font-main;
+	padding-left: 30px;
+}
+
 .nav-header {
 	background-image: url(/images/twilight-8171206_1920.jpg);
 	background-position: center;
@@ -80,25 +110,26 @@ body {
 	align-items: center;
 }
 
-.wrapper-nav .logo {
+.logo {
 	font-family: $font-logo;
 	font-size: 30px;
 	color: $details-color;
 	padding: 0 20px;
+	cursor: pointer;
 }
 
 .menu-tabs {
 	list-style-type: none;
 }
 
-.menu-tabs li {
-	display: inline-block;
-	font-family: $font-main;
-	font-weight: 600;
-	color: $font-color-main;
-	font-size: 14px;
-	padding: 10px 21px;
-}
+// .menu-tabs li {
+// 	display: inline-block;
+// 	font-family: $font-main;
+// 	font-weight: 600;
+// 	color: $font-color-main;
+// 	font-size: 44px;
+// 	padding: 10px 21px;
+// }
 
 .wrapper-header {
 	display: flex;
@@ -109,6 +140,7 @@ body {
 	width: 100%;
 	height: 570px;
 	padding: 0 20px;
+	padding-top: 220px;
 }
 
 .wrapper-header h1 {
@@ -306,7 +338,41 @@ body {
 /* Media */
 
 @media (max-width: 767px) {
+	.navbar {
+		padding-top: 10px;
+		justify-content: space-between;
+	}
 
+	.fixed-top {
+		position: none;
+	}
+
+	.wrapper-nav {
+		display: block;
+	}
+	.wrapper-header {
+		padding-top: 100px;
+	}
+
+	.navbar-nav {
+		align-items: center;
+		background-color: $details-color;
+	}
+
+	.navbar-light .navbar-nav .nav-link {
+		color: $font-color-sections;
+	}
+
+	.navbar-light .navbar-brand {
+		color: $details-color;
+	}
+
+	.navbar-light .navbar-toggler {
+		color: $details-color;
+		border-color: $color-description;
+		border: 2px solid $details-color;
+		margin: 10px;
+	}
 
 	.section-header {
 		padding-top: 65px;
@@ -340,18 +406,15 @@ body {
 	}
 
 	.copy {
-		text-align: center;		
+		text-align: center;
 	}
 
 	.media {
 		text-align: center;
 	}
-
-	
 }
 
 @media (max-width: 576px) {
-
 	.wrapper-header {
 		height: 530px;
 	}
